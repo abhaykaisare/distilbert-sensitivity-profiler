@@ -1,0 +1,37 @@
+# Virtual environment
+env/
+venv/
+.venv/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Large model files — too big for GitHub (>100MB limit)
+mixed_precision_model.pt
+*.pt
+*.bin
+
+# ONNX model folder — generated, not source code
+onnx_model/
+
+# Scratch / experiment files not part of the main pipeline
+decoder_testing.py
+decoder_testing2.py
+decoder_report.txt
+
+# HuggingFace model cache
+.cache/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Jupyter
+.ipynb_checkpoints/

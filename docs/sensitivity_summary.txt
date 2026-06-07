@@ -1,0 +1,44 @@
+DistilBERT SST-2 - Layer Sensitivity Scan Results
+Baseline accuracy : 91.25%
+KL threshold      : 0.0001
+
+Rank  Layer Name                                                  KL Score      MSE           Verdict
+----------------------------------------------------------------------------------------------------
+1     distilbert.transformer.layer.1.ffn.lin2                     0.026776      0.129160      SENSITIVE
+2     distilbert.transformer.layer.2.ffn.lin2                     0.020499      0.101834      SENSITIVE
+3     distilbert.transformer.layer.2.ffn.lin1                     0.016786      0.086963      SENSITIVE
+4     distilbert.transformer.layer.3.ffn.lin1                     0.008419      0.041973      SENSITIVE
+5     distilbert.transformer.layer.4.ffn.lin2                     0.003732      0.055271      SENSITIVE
+6     distilbert.transformer.layer.1.ffn.lin1                     0.003511      0.016760      SENSITIVE
+7     distilbert.transformer.layer.0.ffn.lin1                     0.002999      0.014593      SENSITIVE
+8     distilbert.transformer.layer.0.ffn.lin2                     0.002196      0.013596      SENSITIVE
+9     distilbert.transformer.layer.2.attention.v_lin              0.000952      0.003921      SENSITIVE
+10    distilbert.transformer.layer.3.attention.v_lin              0.000440      0.002652      SENSITIVE
+11    distilbert.transformer.layer.3.ffn.lin2                     0.000368      0.003515      SENSITIVE
+12    distilbert.transformer.layer.4.ffn.lin1                     0.000294      0.001504      SENSITIVE
+13    distilbert.transformer.layer.4.attention.k_lin              0.000279      0.001592      SENSITIVE
+14    distilbert.transformer.layer.2.attention.out_lin            0.000274      0.001152      SENSITIVE
+15    distilbert.transformer.layer.2.attention.k_lin              0.000167      0.000726      SENSITIVE
+16    distilbert.transformer.layer.0.attention.out_lin            0.000139      0.000796      SENSITIVE
+17    distilbert.transformer.layer.2.attention.q_lin              0.000134      0.000683      SENSITIVE
+18    distilbert.transformer.layer.4.attention.v_lin              0.000121      0.000598      SENSITIVE
+19    distilbert.transformer.layer.1.attention.v_lin              0.000108      0.000584      SENSITIVE
+20    distilbert.transformer.layer.3.attention.q_lin              0.000106      0.000606      SENSITIVE
+21    distilbert.transformer.layer.1.attention.k_lin              0.000105      0.000380      SENSITIVE
+22    distilbert.transformer.layer.3.attention.out_lin            0.000080      0.000504      RESILIENT
+23    distilbert.transformer.layer.3.attention.k_lin              0.000080      0.000773      RESILIENT
+24    distilbert.transformer.layer.1.attention.out_lin            0.000072      0.000398      RESILIENT
+25    distilbert.transformer.layer.0.attention.v_lin              0.000066      0.000315      RESILIENT
+26    distilbert.transformer.layer.4.attention.q_lin              0.000057      0.000234      RESILIENT
+27    distilbert.transformer.layer.5.attention.q_lin              0.000046      0.000164      RESILIENT
+28    distilbert.transformer.layer.1.attention.q_lin              0.000040      0.000172      RESILIENT
+29    distilbert.transformer.layer.5.attention.k_lin              0.000038      0.000178      RESILIENT
+30    distilbert.transformer.layer.0.attention.q_lin              0.000021      0.000123      RESILIENT
+31    distilbert.transformer.layer.0.attention.k_lin              0.000020      0.000120      RESILIENT
+32    distilbert.transformer.layer.4.attention.out_lin            0.000016      0.000080      RESILIENT
+33    distilbert.transformer.layer.5.attention.v_lin              0.000007      0.000066      RESILIENT
+34    distilbert.transformer.layer.5.ffn.lin1                     0.000005      0.000211      RESILIENT
+35    distilbert.transformer.layer.5.ffn.lin2                     0.000003      0.000248      RESILIENT
+36    distilbert.transformer.layer.5.attention.out_lin            0.000002      0.000018      RESILIENT
+37    pre_classifier                                              0.000000      0.000017      RESILIENT
+38    classifier                                                  0.000000      0.000008      RESILIENT

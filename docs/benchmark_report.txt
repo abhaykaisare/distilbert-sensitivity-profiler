@@ -1,0 +1,75 @@
+
+======================================================================
+  BENCHMARK REPORT — Three-Way Comparison
+======================================================================
+
+  Model                      Accuracy        Latency       Size    INT8 Layers
+  ------------------------------------------------------------------
+  FP32 Baseline                91.25%        22.77ms    255.5MB          0/38
+  Full INT8                    90.50%         9.20ms    132.3MB         76/38
+  Mixed Precision              91.25%        21.26ms    218.3MB         34/38
+  ------------------------------------------------------------------
+
+  ACCURACY IMPACT
+    Full INT8 accuracy drop   : +0.7500%
+    Mixed precision acc drop  : +0.0000%
+
+  SPEED GAINED
+    Full INT8 speedup         : 2.48x  (reference ceiling)
+    Mixed precision speedup   : 1.07x
+    Speedup captured          : 4.8% of INT8's ceiling
+
+  SIZE REDUCTION (vs FP32)
+    Full INT8 size reduction  : 48.2%
+    Mixed precision reduction : 14.5%
+
+  LAYER DECISIONS
+    Quantized (INT8) : 17 layers  (resilient — KL <= 0.0001)
+    Protected (FP32) : 21 layers  (sensitive — KL > 0.0001)
+
+  PROTECTED LAYERS (kept at FP32):
+    KL=0.026776  distilbert.transformer.layer.1.ffn.lin2
+    KL=0.020499  distilbert.transformer.layer.2.ffn.lin2
+    KL=0.016786  distilbert.transformer.layer.2.ffn.lin1
+    KL=0.008419  distilbert.transformer.layer.3.ffn.lin1
+    KL=0.003732  distilbert.transformer.layer.4.ffn.lin2
+    KL=0.003511  distilbert.transformer.layer.1.ffn.lin1
+    KL=0.002999  distilbert.transformer.layer.0.ffn.lin1
+    KL=0.002196  distilbert.transformer.layer.0.ffn.lin2
+    KL=0.000952  distilbert.transformer.layer.2.attention.v_lin
+    KL=0.000440  distilbert.transformer.layer.3.attention.v_lin
+    KL=0.000368  distilbert.transformer.layer.3.ffn.lin2
+    KL=0.000294  distilbert.transformer.layer.4.ffn.lin1
+    KL=0.000279  distilbert.transformer.layer.4.attention.k_lin
+    KL=0.000274  distilbert.transformer.layer.2.attention.out_lin
+    KL=0.000167  distilbert.transformer.layer.2.attention.k_lin
+    KL=0.000139  distilbert.transformer.layer.0.attention.out_lin
+    KL=0.000134  distilbert.transformer.layer.2.attention.q_lin
+    KL=0.000121  distilbert.transformer.layer.4.attention.v_lin
+    KL=0.000108  distilbert.transformer.layer.1.attention.v_lin
+    KL=0.000106  distilbert.transformer.layer.3.attention.q_lin
+    KL=0.000105  distilbert.transformer.layer.1.attention.k_lin
+
+  QUANTIZED LAYERS (converted to INT8):
+    KL=0.000080  distilbert.transformer.layer.3.attention.out_lin
+    KL=0.000080  distilbert.transformer.layer.3.attention.k_lin
+    KL=0.000072  distilbert.transformer.layer.1.attention.out_lin
+    KL=0.000066  distilbert.transformer.layer.0.attention.v_lin
+    KL=0.000057  distilbert.transformer.layer.4.attention.q_lin
+    KL=0.000046  distilbert.transformer.layer.5.attention.q_lin
+    KL=0.000040  distilbert.transformer.layer.1.attention.q_lin
+    KL=0.000038  distilbert.transformer.layer.5.attention.k_lin
+    KL=0.000021  distilbert.transformer.layer.0.attention.q_lin
+    KL=0.000020  distilbert.transformer.layer.0.attention.k_lin
+    KL=0.000016  distilbert.transformer.layer.4.attention.out_lin
+    KL=0.000007  distilbert.transformer.layer.5.attention.v_lin
+    KL=0.000005  distilbert.transformer.layer.5.ffn.lin1
+    KL=0.000003  distilbert.transformer.layer.5.ffn.lin2
+    KL=0.000002  distilbert.transformer.layer.5.attention.out_lin
+    KL=0.000000  pre_classifier
+    KL=0.000000  classifier
+
+======================================================================
+  Next: step6_final_demo.py  — run inference on custom text
+======================================================================
+

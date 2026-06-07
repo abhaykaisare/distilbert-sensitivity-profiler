@@ -1,0 +1,82 @@
+============================================================================================================================================
+STATE DICT TENSORS
+============================================================================================================================================
+0     | transformer.wte.weight                                                                               | shape=(50257, 768) | dtype=torch.float32
+1     | transformer.wpe.weight                                                                               | shape=(1024, 768) | dtype=torch.float32
+2     | transformer.h.0.ln_1.weight                                                                          | shape=(768,) | dtype=torch.float32
+3     | transformer.h.0.ln_1.bias                                                                            | shape=(768,) | dtype=torch.float32
+4     | transformer.h.0.attn.c_attn.weight                                                                   | shape=(768, 2304) | dtype=torch.float32
+5     | transformer.h.0.attn.c_attn.bias                                                                     | shape=(2304,) | dtype=torch.float32
+6     | transformer.h.0.attn.c_proj.weight                                                                   | shape=(768, 768) | dtype=torch.float32
+7     | transformer.h.0.attn.c_proj.bias                                                                     | shape=(768,) | dtype=torch.float32
+8     | transformer.h.0.ln_2.weight                                                                          | shape=(768,) | dtype=torch.float32
+9     | transformer.h.0.ln_2.bias                                                                            | shape=(768,) | dtype=torch.float32
+10    | transformer.h.0.mlp.c_fc.weight                                                                      | shape=(768, 3072) | dtype=torch.float32
+11    | transformer.h.0.mlp.c_fc.bias                                                                        | shape=(3072,) | dtype=torch.float32
+12    | transformer.h.0.mlp.c_proj.weight                                                                    | shape=(3072, 768) | dtype=torch.float32
+13    | transformer.h.0.mlp.c_proj.bias                                                                      | shape=(768,) | dtype=torch.float32
+14    | transformer.h.1.ln_1.weight                                                                          | shape=(768,) | dtype=torch.float32
+15    | transformer.h.1.ln_1.bias                                                                            | shape=(768,) | dtype=torch.float32
+16    | transformer.h.1.attn.c_attn.weight                                                                   | shape=(768, 2304) | dtype=torch.float32
+17    | transformer.h.1.attn.c_attn.bias                                                                     | shape=(2304,) | dtype=torch.float32
+18    | transformer.h.1.attn.c_proj.weight                                                                   | shape=(768, 768) | dtype=torch.float32
+19    | transformer.h.1.attn.c_proj.bias                                                                     | shape=(768,) | dtype=torch.float32
+20    | transformer.h.1.ln_2.weight                                                                          | shape=(768,) | dtype=torch.float32
+21    | transformer.h.1.ln_2.bias                                                                            | shape=(768,) | dtype=torch.float32
+22    | transformer.h.1.mlp.c_fc.weight                                                                      | shape=(768, 3072) | dtype=torch.float32
+23    | transformer.h.1.mlp.c_fc.bias                                                                        | shape=(3072,) | dtype=torch.float32
+24    | transformer.h.1.mlp.c_proj.weight                                                                    | shape=(3072, 768) | dtype=torch.float32
+25    | transformer.h.1.mlp.c_proj.bias                                                                      | shape=(768,) | dtype=torch.float32
+26    | transformer.h.2.ln_1.weight                                                                          | shape=(768,) | dtype=torch.float32
+27    | transformer.h.2.ln_1.bias                                                                            | shape=(768,) | dtype=torch.float32
+28    | transformer.h.2.attn.c_attn.weight                                                                   | shape=(768, 2304) | dtype=torch.float32
+29    | transformer.h.2.attn.c_attn.bias                                                                     | shape=(2304,) | dtype=torch.float32
+30    | transformer.h.2.attn.c_proj.weight                                                                   | shape=(768, 768) | dtype=torch.float32
+31    | transformer.h.2.attn.c_proj.bias                                                                     | shape=(768,) | dtype=torch.float32
+32    | transformer.h.2.ln_2.weight                                                                          | shape=(768,) | dtype=torch.float32
+33    | transformer.h.2.ln_2.bias                                                                            | shape=(768,) | dtype=torch.float32
+34    | transformer.h.2.mlp.c_fc.weight                                                                      | shape=(768, 3072) | dtype=torch.float32
+35    | transformer.h.2.mlp.c_fc.bias                                                                        | shape=(3072,) | dtype=torch.float32
+36    | transformer.h.2.mlp.c_proj.weight                                                                    | shape=(3072, 768) | dtype=torch.float32
+37    | transformer.h.2.mlp.c_proj.bias                                                                      | shape=(768,) | dtype=torch.float32
+38    | transformer.h.3.ln_1.weight                                                                          | shape=(768,) | dtype=torch.float32
+39    | transformer.h.3.ln_1.bias                                                                            | shape=(768,) | dtype=torch.float32
+40    | transformer.h.3.attn.c_attn.weight                                                                   | shape=(768, 2304) | dtype=torch.float32
+41    | transformer.h.3.attn.c_attn.bias                                                                     | shape=(2304,) | dtype=torch.float32
+42    | transformer.h.3.attn.c_proj.weight                                                                   | shape=(768, 768) | dtype=torch.float32
+43    | transformer.h.3.attn.c_proj.bias                                                                     | shape=(768,) | dtype=torch.float32
+44    | transformer.h.3.ln_2.weight                                                                          | shape=(768,) | dtype=torch.float32
+45    | transformer.h.3.ln_2.bias                                                                            | shape=(768,) | dtype=torch.float32
+46    | transformer.h.3.mlp.c_fc.weight                                                                      | shape=(768, 3072) | dtype=torch.float32
+47    | transformer.h.3.mlp.c_fc.bias                                                                        | shape=(3072,) | dtype=torch.float32
+48    | transformer.h.3.mlp.c_proj.weight                                                                    | shape=(3072, 768) | dtype=torch.float32
+49    | transformer.h.3.mlp.c_proj.bias                                                                      | shape=(768,) | dtype=torch.float32
+50    | transformer.h.4.ln_1.weight                                                                          | shape=(768,) | dtype=torch.float32
+51    | transformer.h.4.ln_1.bias                                                                            | shape=(768,) | dtype=torch.float32
+52    | transformer.h.4.attn.c_attn.weight                                                                   | shape=(768, 2304) | dtype=torch.float32
+53    | transformer.h.4.attn.c_attn.bias                                                                     | shape=(2304,) | dtype=torch.float32
+54    | transformer.h.4.attn.c_proj.weight                                                                   | shape=(768, 768) | dtype=torch.float32
+55    | transformer.h.4.attn.c_proj.bias                                                                     | shape=(768,) | dtype=torch.float32
+56    | transformer.h.4.ln_2.weight                                                                          | shape=(768,) | dtype=torch.float32
+57    | transformer.h.4.ln_2.bias                                                                            | shape=(768,) | dtype=torch.float32
+58    | transformer.h.4.mlp.c_fc.weight                                                                      | shape=(768, 3072) | dtype=torch.float32
+59    | transformer.h.4.mlp.c_fc.bias                                                                        | shape=(3072,) | dtype=torch.float32
+60    | transformer.h.4.mlp.c_proj.weight                                                                    | shape=(3072, 768) | dtype=torch.float32
+61    | transformer.h.4.mlp.c_proj.bias                                                                      | shape=(768,) | dtype=torch.float32
+62    | transformer.h.5.ln_1.weight                                                                          | shape=(768,) | dtype=torch.float32
+63    | transformer.h.5.ln_1.bias                                                                            | shape=(768,) | dtype=torch.float32
+64    | transformer.h.5.attn.c_attn.weight                                                                   | shape=(768, 2304) | dtype=torch.float32
+65    | transformer.h.5.attn.c_attn.bias                                                                     | shape=(2304,) | dtype=torch.float32
+66    | transformer.h.5.attn.c_proj.weight                                                                   | shape=(768, 768) | dtype=torch.float32
+67    | transformer.h.5.attn.c_proj.bias                                                                     | shape=(768,) | dtype=torch.float32
+68    | transformer.h.5.ln_2.weight                                                                          | shape=(768,) | dtype=torch.float32
+69    | transformer.h.5.ln_2.bias                                                                            | shape=(768,) | dtype=torch.float32
+70    | transformer.h.5.mlp.c_fc.weight                                                                      | shape=(768, 3072) | dtype=torch.float32
+71    | transformer.h.5.mlp.c_fc.bias                                                                        | shape=(3072,) | dtype=torch.float32
+72    | transformer.h.5.mlp.c_proj.weight                                                                    | shape=(3072, 768) | dtype=torch.float32
+73    | transformer.h.5.mlp.c_proj.bias                                                                      | shape=(768,) | dtype=torch.float32
+74    | transformer.ln_f.weight                                                                              | shape=(768,) | dtype=torch.float32
+75    | transformer.ln_f.bias                                                                                | shape=(768,) | dtype=torch.float32
+76    | lm_head.weight                                                                                       | shape=(50257, 768) | dtype=torch.float32
+
+TOTAL TENSORS: 77

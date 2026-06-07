@@ -1,0 +1,344 @@
+{
+  "distilbert.transformer.layer.0.attention.q_lin": {
+    "layer_index": 0,
+    "kl_divergence": 2.1276344341458753e-05,
+    "mse": 0.00012258076458238065,
+    "acc_fp32": 0.9125,
+    "acc_quantized": 0.91,
+    "acc_drop": 0.24999999999999467,
+    "time_sec": 13.58
+  },
+  "distilbert.transformer.layer.0.attention.k_lin": {
+    "layer_index": 1,
+    "kl_divergence": 1.9565175534808077e-05,
+    "mse": 0.0001203908323077485,
+    "acc_fp32": 0.9125,
+    "acc_quantized": 0.91,
+    "acc_drop": 0.24999999999999467,
+    "time_sec": 14.11
+  },
+  "distilbert.transformer.layer.0.attention.v_lin": {
+    "layer_index": 2,
+    "kl_divergence": 6.617433245992288e-05,
+    "mse": 0.0003154490259476006,
+    "acc_fp32": 0.9125,
+    "acc_quantized": 0.9125,
+    "acc_drop": 0.0,
+    "time_sec": 13.51
+  },
+  "distilbert.transformer.layer.0.attention.out_lin": {
+    "layer_index": 3,
+    "kl_divergence": 0.0001385939249303192,
+    "mse": 0.0007964253891259432,
+    "acc_fp32": 0.9125,
+    "acc_quantized": 0.91,
+    "acc_drop": 0.24999999999999467,
+    "time_sec": 13.32
+  },
+  "distilbert.transformer.layer.0.ffn.lin1": {
+    "layer_index": 4,
+    "kl_divergence": 0.002999149030074477,
+    "mse": 0.014592661522328854,
+    "acc_fp32": 0.9125,
+    "acc_quantized": 0.915,
+    "acc_drop": -0.2500000000000058,
+    "time_sec": 13.47
+  },
+  "distilbert.transformer.layer.0.ffn.lin2": {
+    "layer_index": 5,
+    "kl_divergence": 0.0021963887847959995,
+    "mse": 0.013596484437584877,
+    "acc_fp32": 0.9125,
+    "acc_quantized": 0.9125,
+    "acc_drop": 0.0,
+    "time_sec": 14.35
+  },
+  "distilbert.transformer.layer.1.attention.q_lin": {
+    "layer_index": 6,
+    "kl_divergence": 3.955086867790669e-05,
+    "mse": 0.00017179136921186,
+    "acc_fp32": 0.9125,
+    "acc_quantized": 0.9125,
+    "acc_drop": 0.0,
+    "time_sec": 14.46
+  },
+  "distilbert.transformer.layer.1.attention.k_lin": {
+    "layer_index": 7,
+    "kl_divergence": 0.00010470880079083145,
+    "mse": 0.00038018569466657937,
+    "acc_fp32": 0.9125,
+    "acc_quantized": 0.9125,
+    "acc_drop": 0.0,
+    "time_sec": 12.66
+  },
+  "distilbert.transformer.layer.1.attention.v_lin": {
+    "layer_index": 8,
+    "kl_divergence": 0.0001082998132915236,
+    "mse": 0.0005835318006575108,
+    "acc_fp32": 0.9125,
+    "acc_quantized": 0.9125,
+    "acc_drop": 0.0,
+    "time_sec": 14.99
+  },
+  "distilbert.transformer.layer.1.attention.out_lin": {
+    "layer_index": 9,
+    "kl_divergence": 7.152017496991903e-05,
+    "mse": 0.0003983443311881274,
+    "acc_fp32": 0.9125,
+    "acc_quantized": 0.9125,
+    "acc_drop": 0.0,
+    "time_sec": 20.54
+  },
+  "distilbert.transformer.layer.1.ffn.lin1": {
+    "layer_index": 10,
+    "kl_divergence": 0.0035114577040076256,
+    "mse": 0.01676010712981224,
+    "acc_fp32": 0.9125,
+    "acc_quantized": 0.9125,
+    "acc_drop": 0.0,
+    "time_sec": 15.58
+  },
+  "distilbert.transformer.layer.1.ffn.lin2": {
+    "layer_index": 11,
+    "kl_divergence": 0.026775626465678215,
+    "mse": 0.12915995717048645,
+    "acc_fp32": 0.9125,
+    "acc_quantized": 0.9075,
+    "acc_drop": 0.5000000000000004,
+    "time_sec": 17.27
+  },
+  "distilbert.transformer.layer.2.attention.q_lin": {
+    "layer_index": 12,
+    "kl_divergence": 0.0001342049945378676,
+    "mse": 0.0006833472871221602,
+    "acc_fp32": 0.9125,
+    "acc_quantized": 0.9125,
+    "acc_drop": 0.0,
+    "time_sec": 15.82
+  },
+  "distilbert.transformer.layer.2.attention.k_lin": {
+    "layer_index": 13,
+    "kl_divergence": 0.00016673080972395837,
+    "mse": 0.000726065132766962,
+    "acc_fp32": 0.9125,
+    "acc_quantized": 0.91,
+    "acc_drop": 0.24999999999999467,
+    "time_sec": 15.94
+  },
+  "distilbert.transformer.layer.2.attention.v_lin": {
+    "layer_index": 14,
+    "kl_divergence": 0.0009524814668111503,
+    "mse": 0.003920633811503649,
+    "acc_fp32": 0.9125,
+    "acc_quantized": 0.915,
+    "acc_drop": -0.2500000000000058,
+    "time_sec": 16.22
+  },
+  "distilbert.transformer.layer.2.attention.out_lin": {
+    "layer_index": 15,
+    "kl_divergence": 0.0002735691668931395,
+    "mse": 0.00115156639367342,
+    "acc_fp32": 0.9125,
+    "acc_quantized": 0.9125,
+    "acc_drop": 0.0,
+    "time_sec": 15.07
+  },
+  "distilbert.transformer.layer.2.ffn.lin1": {
+    "layer_index": 16,
+    "kl_divergence": 0.016785649582743645,
+    "mse": 0.08696258813142776,
+    "acc_fp32": 0.9125,
+    "acc_quantized": 0.9125,
+    "acc_drop": 0.0,
+    "time_sec": 16.4
+  },
+  "distilbert.transformer.layer.2.ffn.lin2": {
+    "layer_index": 17,
+    "kl_divergence": 0.020499372854828835,
+    "mse": 0.10183433443307877,
+    "acc_fp32": 0.9125,
+    "acc_quantized": 0.9125,
+    "acc_drop": 0.0,
+    "time_sec": 16.7
+  },
+  "distilbert.transformer.layer.3.attention.q_lin": {
+    "layer_index": 18,
+    "kl_divergence": 0.00010623145499266684,
+    "mse": 0.0006061571184545755,
+    "acc_fp32": 0.9125,
+    "acc_quantized": 0.91,
+    "acc_drop": 0.24999999999999467,
+    "time_sec": 15.88
+  },
+  "distilbert.transformer.layer.3.attention.k_lin": {
+    "layer_index": 19,
+    "kl_divergence": 7.971077866386622e-05,
+    "mse": 0.0007732109515927732,
+    "acc_fp32": 0.9125,
+    "acc_quantized": 0.91,
+    "acc_drop": 0.24999999999999467,
+    "time_sec": 17.65
+  },
+  "distilbert.transformer.layer.3.attention.v_lin": {
+    "layer_index": 20,
+    "kl_divergence": 0.0004399375757202506,
+    "mse": 0.002652383642271161,
+    "acc_fp32": 0.9125,
+    "acc_quantized": 0.9125,
+    "acc_drop": 0.0,
+    "time_sec": 16.27
+  },
+  "distilbert.transformer.layer.3.attention.out_lin": {
+    "layer_index": 21,
+    "kl_divergence": 8.00868947408162e-05,
+    "mse": 0.0005037176888436079,
+    "acc_fp32": 0.9125,
+    "acc_quantized": 0.91,
+    "acc_drop": 0.24999999999999467,
+    "time_sec": 17.65
+  },
+  "distilbert.transformer.layer.3.ffn.lin1": {
+    "layer_index": 22,
+    "kl_divergence": 0.008419097401201725,
+    "mse": 0.04197343438863754,
+    "acc_fp32": 0.9125,
+    "acc_quantized": 0.905,
+    "acc_drop": 0.7499999999999951,
+    "time_sec": 15.84
+  },
+  "distilbert.transformer.layer.3.ffn.lin2": {
+    "layer_index": 23,
+    "kl_divergence": 0.0003675461048260331,
+    "mse": 0.0035150048788636923,
+    "acc_fp32": 0.9125,
+    "acc_quantized": 0.91,
+    "acc_drop": 0.24999999999999467,
+    "time_sec": 17.67
+  },
+  "distilbert.transformer.layer.4.attention.q_lin": {
+    "layer_index": 24,
+    "kl_divergence": 5.724768197978847e-05,
+    "mse": 0.00023382810468319803,
+    "acc_fp32": 0.9125,
+    "acc_quantized": 0.91,
+    "acc_drop": 0.24999999999999467,
+    "time_sec": 15.44
+  },
+  "distilbert.transformer.layer.4.attention.k_lin": {
+    "layer_index": 25,
+    "kl_divergence": 0.0002787065168377012,
+    "mse": 0.0015918448334559798,
+    "acc_fp32": 0.9125,
+    "acc_quantized": 0.9125,
+    "acc_drop": 0.0,
+    "time_sec": 14.69
+  },
+  "distilbert.transformer.layer.4.attention.v_lin": {
+    "layer_index": 26,
+    "kl_divergence": 0.00012114417040720582,
+    "mse": 0.0005981476861052215,
+    "acc_fp32": 0.9125,
+    "acc_quantized": 0.9125,
+    "acc_drop": 0.0,
+    "time_sec": 14.75
+  },
+  "distilbert.transformer.layer.4.attention.out_lin": {
+    "layer_index": 27,
+    "kl_divergence": 1.5535397324129008e-05,
+    "mse": 7.996029307832941e-05,
+    "acc_fp32": 0.9125,
+    "acc_quantized": 0.9125,
+    "acc_drop": 0.0,
+    "time_sec": 14.66
+  },
+  "distilbert.transformer.layer.4.ffn.lin1": {
+    "layer_index": 28,
+    "kl_divergence": 0.00029391367570497096,
+    "mse": 0.0015036958502605557,
+    "acc_fp32": 0.9125,
+    "acc_quantized": 0.91,
+    "acc_drop": 0.24999999999999467,
+    "time_sec": 13.95
+  },
+  "distilbert.transformer.layer.4.ffn.lin2": {
+    "layer_index": 29,
+    "kl_divergence": 0.0037320340052247047,
+    "mse": 0.05527125298976898,
+    "acc_fp32": 0.9125,
+    "acc_quantized": 0.9125,
+    "acc_drop": 0.0,
+    "time_sec": 14.06
+  },
+  "distilbert.transformer.layer.5.attention.q_lin": {
+    "layer_index": 30,
+    "kl_divergence": 4.605411595548503e-05,
+    "mse": 0.00016402319306507707,
+    "acc_fp32": 0.9125,
+    "acc_quantized": 0.91,
+    "acc_drop": 0.24999999999999467,
+    "time_sec": 14.35
+  },
+  "distilbert.transformer.layer.5.attention.k_lin": {
+    "layer_index": 31,
+    "kl_divergence": 3.777853635256179e-05,
+    "mse": 0.000178434798726812,
+    "acc_fp32": 0.9125,
+    "acc_quantized": 0.91,
+    "acc_drop": 0.24999999999999467,
+    "time_sec": 14.02
+  },
+  "distilbert.transformer.layer.5.attention.v_lin": {
+    "layer_index": 32,
+    "kl_divergence": 6.907270744704874e-06,
+    "mse": 6.579973705811426e-05,
+    "acc_fp32": 0.9125,
+    "acc_quantized": 0.9125,
+    "acc_drop": 0.0,
+    "time_sec": 14.98
+  },
+  "distilbert.transformer.layer.5.attention.out_lin": {
+    "layer_index": 33,
+    "kl_divergence": 1.5850283716645208e-06,
+    "mse": 1.8181415725848638e-05,
+    "acc_fp32": 0.9125,
+    "acc_quantized": 0.9125,
+    "acc_drop": 0.0,
+    "time_sec": 16.42
+  },
+  "distilbert.transformer.layer.5.ffn.lin1": {
+    "layer_index": 34,
+    "kl_divergence": 4.762578555528307e-06,
+    "mse": 0.00021102400205563754,
+    "acc_fp32": 0.9125,
+    "acc_quantized": 0.9125,
+    "acc_drop": 0.0,
+    "time_sec": 18.55
+  },
+  "distilbert.transformer.layer.5.ffn.lin2": {
+    "layer_index": 35,
+    "kl_divergence": 3.0964124562160578e-06,
+    "mse": 0.00024750735610723495,
+    "acc_fp32": 0.9125,
+    "acc_quantized": 0.9125,
+    "acc_drop": 0.0,
+    "time_sec": 16.51
+  },
+  "pre_classifier": {
+    "layer_index": 36,
+    "kl_divergence": 3.6206910181135754e-07,
+    "mse": 1.7301512343692593e-05,
+    "acc_fp32": 0.9125,
+    "acc_quantized": 0.9125,
+    "acc_drop": 0.0,
+    "time_sec": 17.19
+  },
+  "classifier": {
+    "layer_index": 37,
+    "kl_divergence": 4.806468467677405e-08,
+    "mse": 7.833189556549769e-06,
+    "acc_fp32": 0.9125,
+    "acc_quantized": 0.9125,
+    "acc_drop": 0.0,
+    "time_sec": 16.12
+  }
+}
