@@ -1,0 +1,17 @@
+Pairwise Interaction Matrix — Summary
+Model: distilbert-base-uncased-finetuned-sst-2-english
+Pairs: 703 | Super-additive: 129 | Sub-additive: 132 | Independent: 442
+
+Top 5 Toxic Pairs (avoid quantizing together):
+  +0.007255  L10:distilbert.transformer.layer.1.ffn.lin1  x  L17:distilbert.transformer.layer.2.ffn.lin2
+  +0.004973  L14:distilbert.transformer.layer.2.attention.v_lin  x  L22:distilbert.transformer.layer.3.ffn.lin1
+  +0.004812  L15:distilbert.transformer.layer.2.attention.out_lin  x  L17:distilbert.transformer.layer.2.ffn.lin2
+  +0.004652  L4:distilbert.transformer.layer.0.ffn.lin1  x  L17:distilbert.transformer.layer.2.ffn.lin2
+  +0.004143  L13:distilbert.transformer.layer.2.attention.k_lin  x  L22:distilbert.transformer.layer.3.ffn.lin1
+
+Top 5 Synergistic Pairs (safe to quantize together):
+  -0.004487  L10:distilbert.transformer.layer.1.ffn.lin1  x  L16:distilbert.transformer.layer.2.ffn.lin1
+  -0.005401  L8:distilbert.transformer.layer.1.attention.v_lin  x  L11:distilbert.transformer.layer.1.ffn.lin2
+  -0.007577  L16:distilbert.transformer.layer.2.ffn.lin1  x  L17:distilbert.transformer.layer.2.ffn.lin2
+  -0.009936  L4:distilbert.transformer.layer.0.ffn.lin1  x  L11:distilbert.transformer.layer.1.ffn.lin2
+  -0.017851  L17:distilbert.transformer.layer.2.ffn.lin2  x  L22:distilbert.transformer.layer.3.ffn.lin1

@@ -1,0 +1,41 @@
+
+======================================================================
+  STEP 9 v2: GREEDY COMPILER — FINAL REPORT
+======================================================================
+
+  SETTINGS
+    KL Budget (matrix)  : 0.015
+    Real KL limit       : 0.005
+    Validation interval : every 5 layers
+    Stop reason         : REAL_KL_LIMIT (measured 0.024771 > 0.005)
+
+  THREE-WAY BENCHMARK
+  Model                    Accuracy   Acc Drop      Latency    Speedup   INT8 Layers
+  --------------------------------------------------------------------------------
+  FP32 Baseline              91.25%     0.0000%      29.80ms      1.00x       0/38
+  Step5 (binary)             91.25%    +0.0000%      22.81ms      1.31x      17/38
+  Step9-v2 (greedy)          91.25%    +0.0000%      21.60ms      1.38x      20/38
+  --------------------------------------------------------------------------------
+
+  LAYER DECISIONS
+    Newly quantized by greedy (9 vs step5):
+      L1.attn.k              isolated=0.000105  adjusted=0.000004  delta=-0.000100
+      L1.attn.v              isolated=0.000108  adjusted=-0.000096  delta=-0.000204
+      L2.attn.q              isolated=0.000134  adjusted=-0.000107  delta=-0.000241
+      L2.attn.k              isolated=0.000167  adjusted=0.000068  delta=-0.000099
+      L2.attn.v              isolated=0.000952  adjusted=-0.000340  delta=-0.001293
+      L2.attn.out            isolated=0.000274  adjusted=-0.000140  delta=-0.000414
+      L3.attn.q              isolated=0.000106  adjusted=0.000000  delta=-0.000106
+      L4.attn.v              isolated=0.000121  adjusted=-0.000088  delta=-0.000209
+      L4.ffn.1               isolated=0.000294  adjusted=0.000051  delta=-0.000243
+
+    Newly protected by greedy (6 vs step5):
+      L0.attn.v
+      L1.attn.q
+      L1.attn.out
+      L3.attn.k
+      L4.attn.q
+      L5.attn.k
+
+======================================================================
+

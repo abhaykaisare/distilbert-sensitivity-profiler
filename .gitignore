@@ -21,6 +21,9 @@ onnx_model/
 decoder_testing.py
 decoder_testing2.py
 decoder_report.txt
+4_model_info.py
+5_tensor_basics.py
+
 
 # HuggingFace model cache
 .cache/

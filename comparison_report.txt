@@ -1,0 +1,7 @@
+Four-Way Model Comparison
+Eval samples: 400
+
+FP32: 91.25%  24.52ms
+ONNX INT8: 90.50%  7.79ms  64.2MB
+Step5 (17L): 91.25%  22.91ms  218.3MB
+Step9 (20L): 91.25%  21.41ms  208.2MB
